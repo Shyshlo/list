@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body {
+  background-color:rgb(142, 159, 153);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+padding-top: 20px;
+background-color: rgb(250, 241, 228);
+min-height: 80px;
+width: 800px;
+margin: 30px auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.containerLogo{
+
+  position: relative;
+  left: 5%;
+
+}
+.crossed{
+  text-decoration: line-through rgb(236, 141, 141) 2px;
+  background-color: rgb(227, 226, 217);
+  box-shadow: 10px 5px white;
+ 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul, li{
+  list-style-type: none;
+  font-size: 20px;
+  font-family: 'Tapestry', cursive;
+  padding: 10px;
+  margin: 0;
+}
+h1 {
+  font-family: 'Tapestry', cursive;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Tapestry', cursive;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px 0px #7e7b77; 
+  border: none;
+}
+
+.btn{
+  font-family: 'Tapestry', cursive;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  font-size: 20px;
+  
+ 
+
+}
+.delete{
+  background-color: rgb(91, 120, 111);
+  color: #fff;
+  margin-bottom: 50px;
+}
+.add{
+  background-color: rgb(175, 217, 203);
+    
+  
 }

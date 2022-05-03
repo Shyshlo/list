@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import image1 from './image1.jpg';
+import image2 from './image2.jpg';
+import { ToDoList } from './ToDoList';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+    <div className='containerLogo'>
+  <img className='logo' src={ image1 } width='200px' alt='photo1' />
     </div>
+    <div className='container'>
+  <h1> TO DO LIST</h1>
+  </div>
+
+   <ToDoList />
+
+<div className='container'>
+<img src={ image2 } width='100%' height='300px' alt='photo2' />
+  </div>
+  </div>
   );
 }
 
