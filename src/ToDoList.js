@@ -18,7 +18,7 @@ export class ToDoList extends Component {
         let listarray = this.state.toDoList;
         listarray.push(text)
         this.setState({toDoList: listarray, writeInput: ''})
-        console.log(listarray);
+       
     }
 }
     crossWord(event) {
@@ -50,8 +50,8 @@ export class ToDoList extends Component {
             <ul>
                 {this.state.toDoList.map((item, index) => (
                     <li onClick={this.crossWord} key={index}>
-                    <img src={ imageList1 } width='40px' /> {item}
-                    </li>
+                    <img src={ imageList1 } width='40px' alt='photon'/> 
+                    {item}</li>
                 ))}
             </ul>
             <div className='container'>
