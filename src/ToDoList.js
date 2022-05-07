@@ -53,6 +53,7 @@ export class ToDoList extends Component {
                     <img src={ imageList1 } width='40px' alt='photon'/> 
                     {item}</li>
                 ))}
+
             </ul>
             <div className='container'>
             <button onClick={() => this.deleteItem()} className='btn delete'>Delete</button>
